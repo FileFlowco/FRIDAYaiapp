@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — FRIDAY</title>
+<meta name="description" content="FRIDAY's privacy policy — your data never leaves your device.">
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero{padding:140px 0 60px;text-align:center}
+.page-hero .subline{margin:18px auto 0;max-width:540px}
+.priv-highlight{background:radial-gradient(ellipse at center,rgba(61,230,230,.07),transparent 70%);border:1px solid rgba(61,230,230,.2);border-radius:20px;padding:40px 48px;text-align:center;margin-bottom:60px}
+.priv-highlight h2{font-size:clamp(22px,3.5vw,38px);font-weight:700;letter-spacing:-.03em;margin-bottom:12px}
+.priv-highlight p{font-size:15px;color:var(--t2);max-width:520px;margin:0 auto}
+.priv-badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.priv-badge{background:rgba(0,0,0,.4);border:1px solid rgba(61,230,230,.2);font-size:13px;padding:8px 16px;border-radius:980px}
+
+/* LEGAL DOC */
+.legal{max-width:760px;margin:0 auto;padding-bottom:80px}
+.legal h2{font-size:22px;font-weight:700;letter-spacing:-.02em;margin-top:48px;margin-bottom:14px;padding-top:48px;border-top:1px solid var(--border)}
+.legal h2:first-child{margin-top:0;border-top:none;padding-top:0}
+.legal p{font-size:15px;color:var(--t2);line-height:1.8;margin-bottom:14px}
+.legal ul{margin:14px 0 14px 20px;display:flex;flex-direction:column;gap:8px}
+.legal li{font-size:15px;color:var(--t2);line-height:1.7}
+.legal strong{color:var(--t1)}
+.legal a{color:var(--cyan);text-decoration:none}
+.legal a:hover{text-decoration:underline}
+.meta{font-size:13px;color:var(--t3);margin-bottom:48px}
+
+/* TOC */
+.toc{background:var(--s1);border:1px solid var(--border);border-radius:14px;padding:28px 32px;margin-bottom:48px}
+.toc h3{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--t3);margin-bottom:16px}
+.toc ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+.toc li a{font-size:14px;color:var(--t2);text-decoration:none;transition:color .2s}
+.toc li a:hover{color:var(--cyan)}
+
+@media(max-width:860px){
+  .priv-highlight{padding:28px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo"><img src="assets/eyes.png" alt="FRIDAY"> FRIDAY</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="features.html">Features</a></li>
+    <li><a href="models.html">Models</a></li>
+    <li><a href="privacy.html" class="on">Privacy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="https://apps.apple.com" class="nav-cta">Download</a>
+  <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="models.html">Models</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://apps.apple.com" style="color:var(--cyan);margin-top:8px">Download →</a>
+</div>
+
+<div class="wrap">
+  <section class="page-hero">
+    <span class="eyebrow reveal">Privacy Policy</span>
+    <h1 class="headline reveal" style="font-size:clamp(36px,6vw,72px)">Your data never<br>leaves your device.</h1>
+    <p class="subline reveal">FRIDAY is built on a simple principle: we can't leak what we never receive.</p>
+  </section>
+
+  <div class="priv-highlight reveal">
+    <h2>The short version</h2>
+    <p>FRIDAY collects zero personal data, sends nothing to any server, and has no account system. The AI model runs 100% on your iPhone. Your conversations exist only on your device, encrypted by iOS, inaccessible to us.</p>
+    <div class="priv-badges">
+      <div class="priv-badge">🔒 No data collection</div>
+      <div class="priv-badge">🚫 No tracking</div>
+      <div class="priv-badge">📵 No cloud inference</div>
+      <div class="priv-badge">🆓 No account required</div>
+      <div class="priv-badge">🔑 Keychain storage only</div>
+    </div>
+  </div>
+
+  <div class="legal">
+    <div class="meta">Last updated: May 2025 · Effective immediately</div>
+
+    <div class="toc">
+      <h3>Contents</h3>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#data-we-collect">Data we collect</a></li>
+        <li><a href="#on-device">On-device processing</a></li>
+        <li><a href="#cloud">Optional cloud providers</a></li>
+        <li><a href="#api-keys">API key storage</a></li>
+        <li><a href="#chat-history">Chat history</a></li>
+        <li><a href="#voice">Voice &amp; microphone</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+        <li><a href="#analytics">Analytics &amp; tracking</a></li>
+        <li><a href="#third-party">Third-party services</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </div>
+
+    <h2 id="overview">1. Overview</h2>
+    <p>FRIDAY ("we", "the app") is a private AI assistant for iPhone. This privacy policy explains our data practices. The summary is simple: <strong>we collect nothing, store nothing externally, and have no visibility into your usage.</strong></p>
+    <p>FRIDAY is designed so that even if we wanted to access your data, we technically couldn't — because it never reaches any infrastructure we control.</p>
+
+    <h2 id="data-we-collect">2. Data we collect</h2>
+    <p><strong>We collect zero personal data.</strong> FRIDAY has no backend servers, no database, no analytics pipeline, and no user accounts. There is no mechanism by which we could receive your personal information.</p>
+    <p>Specifically, we do not collect:</p>
+    <ul>
+      <li>Your name, email address, or any identifying information</li>
+      <li>Your conversation history or message content</li>
+      <li>Your device identifiers (IDFA, IDFV, etc.)</li>
+      <li>Usage statistics, session length, or behavioral analytics</li>
+      <li>Crash reports (unless iOS sends them through Apple's standard mechanism)</li>
+      <li>Location data of any kind</li>
+    </ul>
+
+    <h2 id="on-device">3. On-device processing</h2>
+    <p>FRIDAY's core AI capability runs entirely on your iPhone. When you send a message, it is processed locally by the Llama 3.2 model using Apple's Neural Engine and Metal GPU acceleration. <strong>No network request is made for inference.</strong></p>
+    <p>The model file itself (~1.8 GB for the 3B variant) is downloaded once from a CDN over HTTPS, then stored locally on your device. Subsequent sessions require no internet connection whatsoever.</p>
+
+    <h2 id="cloud">4. Optional cloud providers</h2>
+    <p>FRIDAY optionally supports cloud AI providers (OpenAI and Anthropic) as an alternative inference backend. This feature is <strong>disabled by default</strong> and must be explicitly enabled by you in Settings.</p>
+    <p>When you enable cloud inference:</p>
+    <ul>
+      <li>Your API key is stored in your iPhone's Keychain (see Section 5)</li>
+      <li>Your messages are sent directly from your device to the provider's API (openai.com or api.anthropic.com)</li>
+      <li>FRIDAY does not proxy, log, or intercept these requests</li>
+      <li>The provider's own privacy policy governs how they handle your data</li>
+    </ul>
+    <p>You can disable cloud inference at any time in Settings. Doing so immediately returns all processing to on-device mode.</p>
+
+    <h2 id="api-keys">5. API key storage</h2>
+    <p>If you enter an API key for OpenAI or Anthropic, it is stored exclusively in your iPhone's Keychain. The Keychain is Apple's encrypted credential storage — it is hardware-backed on modern iPhones and inaccessible to other apps or to us.</p>
+    <p>We cannot read, access, transmit, or recover your API keys under any circumstances. If you delete the app, your API keys are removed from Keychain automatically.</p>
+
+    <h2 id="chat-history">6. Chat history</h2>
+    <p>Your conversation history is stored locally on your device using iOS data storage, protected by iOS encryption and your device passcode/biometrics.</p>
+    <p>We have no access to your chat history. It is never synced to our servers (we have none), and it does not participate in any iCloud sync unless your iPhone's default app data sync is enabled — in which case Apple's iCloud privacy policy applies.</p>
+
+    <h2 id="voice">7. Voice &amp; microphone</h2>
+    <p>FRIDAY requests microphone access to support voice input. When you use voice input, your audio is transcribed on-device using Apple's Speech framework with on-device recognition enabled. <strong>No audio is transmitted to Apple's servers or to us.</strong></p>
+    <p>Microphone access is only active while you are actively recording. You can revoke microphone permission at any time in iOS Settings → Privacy → Microphone.</p>
+
+    <h2 id="notifications">8. Notifications</h2>
+    <p>FRIDAY requests notification permission to alert you when the AI model has finished downloading and is ready to use. Notifications are generated and delivered locally on your device — no server push infrastructure is used. We cannot send you any notifications without your device initiating them.</p>
+
+    <h2 id="analytics">9. Analytics &amp; tracking</h2>
+    <p>FRIDAY contains <strong>zero analytics SDKs, zero tracking pixels, and zero third-party data collection libraries.</strong> We do not use Firebase, Amplitude, Mixpanel, Segment, Sentry, or any similar service.</p>
+    <p>Apple may collect standard App Store analytics (install count, crash logs submitted through iOS) under their own privacy policy. This data is aggregated and anonymous and is not linked to individual users.</p>
+
+    <h2 id="third-party">10. Third-party services</h2>
+    <p>The only third-party network contact FRIDAY makes is:</p>
+    <ul>
+      <li><strong>Model download CDN</strong> — a one-time HTTPS download of the Llama model file. No account or personal data required.</li>
+      <li><strong>OpenAI / Anthropic APIs</strong> — only if you explicitly configure and enable a cloud provider.</li>
+    </ul>
+    <p>No advertising networks, social SDKs, or tracking frameworks are included in the app.</p>
+
+    <h2 id="children">11. Children's privacy</h2>
+    <p>FRIDAY is not directed at children under 13. We do not knowingly collect any information from children. Since we collect no information from anyone, this is structurally guaranteed.</p>
+
+    <h2 id="changes">12. Changes to this policy</h2>
+    <p>If we update this privacy policy, we will post the updated version here and update the "Last updated" date above. Continued use of FRIDAY after changes constitutes acceptance of the revised policy. Material changes will be communicated via an in-app notice.</p>
+
+    <h2 id="contact">13. Contact</h2>
+    <p>Questions about privacy? We're happy to explain anything in plain language.</p>
+    <p>Email: <a href="mailto:privacy@fridayai.app">privacy@fridayai.app</a><br>
+    General: <a href="contact.html">Contact page</a></p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="flogo"><img src="assets/eyes.png" alt="FRIDAY"> FRIDAY</a>
+    <ul class="fnav">
+      <li><a href="features.html">Features</a></li>
+      <li><a href="models.html">Models</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <span class="fcopy">© 2025 FRIDAY. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+const ham = document.getElementById('hamburger');
+const mob = document.getElementById('mobileMenu');
+ham.addEventListener('click', () => {
+  mob.classList.toggle('open');
+  const s = ham.querySelectorAll('span');
+  s[0].style.transform = mob.classList.contains('open') ? 'rotate(45deg) translate(5px,5px)':'';
+  s[1].style.opacity = mob.classList.contains('open') ? '0':'1';
+  s[2].style.transform = mob.classList.contains('open') ? 'rotate(-45deg) translate(5px,-5px)':'';
+});
+const io = new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

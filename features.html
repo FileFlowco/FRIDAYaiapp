@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Features — FRIDAY</title>
+<meta name="description" content="Everything FRIDAY can do — on-device AI, voice, multi-model support, private chat history and more.">
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero{padding:140px 0 80px;text-align:center}
+.page-hero .headline{margin-top:14px}
+.page-hero .subline{margin:18px auto 0;max-width:580px}
+
+/* FEATURE GRID */
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-top:56px}
+.feat-grid .cell.wide{grid-column:span 2}
+.feat-grid .cell.tall{display:flex;flex-direction:column;justify-content:flex-end;min-height:280px;background-image:radial-gradient(ellipse at top,rgba(61,230,230,.07),transparent 70%)}
+
+/* DEEP DIVE */
+.deep{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:56px}
+.deep.flip{direction:rtl}.deep.flip>*{direction:ltr}
+.deep-img{border-radius:20px;overflow:hidden;border:1px solid var(--border);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:var(--s1)}
+.deep-img img{width:100%;height:100%;object-fit:cover;border-radius:20px}
+.deep-text h3{font-size:clamp(22px,3vw,34px);font-weight:700;letter-spacing:-.03em;margin-bottom:14px}
+.deep-text p{font-size:15px;color:var(--t2);line-height:1.7;margin-bottom:14px}
+.feat-tag{display:inline-block;background:rgba(61,230,230,.1);border:1px solid rgba(61,230,230,.2);color:var(--cyan);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;padding:4px 10px;border-radius:980px;margin-bottom:16px}
+
+/* CLOUD OPTIONAL */
+.cloud-band{background:var(--s1);border:1px solid var(--border);border-radius:20px;padding:48px;margin-top:56px}
+.cloud-band h3{font-size:clamp(20px,3vw,32px);font-weight:700;letter-spacing:-.03em;margin-bottom:12px}
+.cloud-band p{font-size:15px;color:var(--t2);line-height:1.7;max-width:640px;margin-bottom:24px}
+.cloud-providers{display:flex;gap:16px;flex-wrap:wrap}
+.provider{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:16px 22px;font-size:14px;font-weight:500}
+
+/* PRIV STRIP */
+.priv-strip{background:radial-gradient(ellipse at center,rgba(61,230,230,.06),transparent 70%);border:1px solid rgba(61,230,230,.15);border-radius:20px;padding:56px;text-align:center;margin-top:56px}
+.priv-strip h3{font-size:clamp(24px,4vw,44px);font-weight:700;letter-spacing:-.04em;margin-bottom:14px}
+.priv-strip p{font-size:16px;color:var(--t2);max-width:520px;margin:0 auto 28px}
+.priv-badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.priv-badge{background:rgba(0,0,0,.4);border:1px solid rgba(61,230,230,.2);color:var(--t1);font-size:13px;padding:9px 18px;border-radius:980px}
+
+@media(max-width:860px){
+  .feat-grid{grid-template-columns:1fr}
+  .feat-grid .cell.wide{grid-column:span 1}
+  .deep{grid-template-columns:1fr}
+  .deep.flip{direction:ltr}
+  .cloud-band{padding:28px 20px}
+  .priv-strip{padding:36px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo"><img src="assets/eyes.png" alt="FRIDAY"> FRIDAY</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="features.html" class="on">Features</a></li>
+    <li><a href="models.html">Models</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="https://apps.apple.com" class="nav-cta">Download</a>
+  <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="models.html">Models</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://apps.apple.com" style="color:var(--cyan);margin-top:8px">Download →</a>
+</div>
+
+<div class="wrap">
+  <section class="page-hero">
+    <span class="eyebrow reveal">Everything FRIDAY does</span>
+    <h1 class="headline reveal">Real AI.<br>Zero cloud.</h1>
+    <p class="subline reveal">Every feature runs on your device. No internet required. No subscription. No compromise on privacy.</p>
+  </section>
+
+  <!-- FEATURE GRID -->
+  <div class="feat-grid">
+    <div class="cell wide reveal">
+      <span class="ico">🧠</span>
+      <h3>On-device inference</h3>
+      <p>FRIDAY runs Llama 3.2 entirely on your iPhone using Apple's Neural Engine and Metal GPU acceleration. Responses generate at 20–40 tokens per second — no servers, no latency spikes, no downtime.</p>
+    </div>
+    <div class="cell reveal">
+      <span class="ico">🔒</span>
+      <h3>Total privacy</h3>
+      <p>Your messages never leave your phone. Every word you type stays on-device, encrypted by iOS, never logged.</p>
+    </div>
+    <div class="cell reveal">
+      <span class="ico">💬</span>
+      <h3>Multi-turn chat</h3>
+      <p>Full conversation history with context window management. FRIDAY remembers the whole thread while you work.</p>
+    </div>
+    <div class="cell reveal">
+      <span class="ico">📂</span>
+      <h3>Chat history</h3>
+      <p>All your conversations are saved locally. Browse, search, and resume past threads anytime — even offline.</p>
+    </div>
+    <div class="cell wide reveal">
+      <span class="ico">☁️</span>
+      <h3>Optional cloud boost</h3>
+      <p>Need GPT-4o or Claude Sonnet for a demanding task? FRIDAY lets you connect your own API key for cloud inference — your key, your cost, zero middlemen. Switch back to on-device instantly. Cloud is always opt-in.</p>
+    </div>
+    <div class="cell reveal">
+      <span class="ico">🎤</span>
+      <h3>Voice input</h3>
+      <p>Dictate your messages with on-device speech recognition. Transcription happens locally — nothing sent to Apple or anyone else.</p>
+    </div>
+    <div class="cell reveal">
+      <span class="ico">✈️</span>
+      <h3>Airplane mode ready</h3>
+      <p>Once the model downloads, FRIDAY works anywhere — no signal required. Flights, remote areas, wherever you go.</p>
+    </div>
+    <div class="cell reveal">
+      <span class="ico">⚡</span>
+      <h3>Instant responses</h3>
+      <p>No round-trip to a cloud server. Inference starts immediately on your hardware. No waiting for API rate limits or outages.</p>
+    </div>
+    <div class="cell reveal">
+      <span class="ico">📝</span>
+      <h3>Markdown rendering</h3>
+      <p>Code blocks, bold, bullets, headers — FRIDAY renders rich text responses so output is always readable and well-structured.</p>
+    </div>
+  </div>
+
+  <!-- DEEP DIVE 1 -->
+  <section class="section">
+    <div class="deep">
+      <div class="deep-img">
+        <img src="assets/FRIDAYeyes.png" alt="FRIDAY on-device AI" style="object-fit:contain;padding:32px;filter:drop-shadow(0 0 24px rgba(61,230,230,.35))">
+      </div>
+      <div class="deep-text reveal">
+        <div class="feat-tag">On-device</div>
+        <h3>The model runs on your chip. Not theirs.</h3>
+        <p>When you download FRIDAY, the Llama 3.2 3B model is stored directly on your device. Every token is generated by your iPhone's Neural Engine — not a server farm in Virginia.</p>
+        <p>This means no API limits, no latency from geographic routing, no service outages. Your AI is always available because it's always with you.</p>
+        <a href="models.html" class="btn btn-ghost" style="font-size:14px">Explore models →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEEP DIVE 2 -->
+  <section class="section">
+    <div class="deep flip">
+      <div class="deep-img">
+        <img src="assets/FRIDAYbooting.png" alt="FRIDAY booting" style="object-fit:contain;padding:24px;filter:drop-shadow(0 0 20px rgba(61,230,230,.25))">
+      </div>
+      <div class="deep-text reveal">
+        <div class="feat-tag">Cloud — optional</div>
+        <h3>Bring your own key. Or don't.</h3>
+        <p>For tasks that need heavier reasoning — complex code, long documents, multi-step plans — FRIDAY lets you attach your own OpenAI or Anthropic API key.</p>
+        <p>Your key goes directly from your phone to the provider. FRIDAY never sees it, stores it, or proxies it through any server. Keychain-encrypted on your device.</p>
+        <p>When you're done, switch back to on-device with one tap. The cloud is a tool, not a requirement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOUD PROVIDERS -->
+  <div class="cloud-band reveal">
+    <span class="eyebrow">Supported cloud providers</span>
+    <h3>Your key. Your model. Your call.</h3>
+    <p>FRIDAY supports the two most capable AI providers on the market as optional backends. Both require your own API key — FRIDAY acts as a thin local client, never a proxy.</p>
+    <div class="cloud-providers">
+      <div class="provider">🤖 OpenAI — GPT-4o</div>
+      <div class="provider">🔮 Anthropic — Claude Sonnet 4.6</div>
+      <div class="provider">📱 On-device — Llama 3.2 (default, always free)</div>
+    </div>
+  </div>
+
+  <!-- PRIVACY STRIP -->
+  <div class="priv-strip reveal" style="margin-bottom:80px">
+    <img src="assets/FRIDAYeyes.png" alt="" style="width:100px;height:auto;margin-bottom:24px;filter:drop-shadow(0 0 20px rgba(61,230,230,.4))">
+    <h3>Privacy isn't a feature.<br>It's the foundation.</h3>
+    <p>Every design decision in FRIDAY starts with the same question: does this require sending data anywhere? If yes, it either doesn't ship or it's optional.</p>
+    <div class="priv-badges">
+      <div class="priv-badge">🔒 Zero telemetry</div>
+      <div class="priv-badge">📵 Works offline</div>
+      <div class="priv-badge">🚫 No account needed</div>
+      <div class="priv-badge">🔑 Keychain-encrypted</div>
+    </div>
+    <a href="privacy.html" class="btn btn-ghost" style="margin-top:28px;font-size:14px">Read full privacy policy →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="flogo"><img src="assets/eyes.png" alt="FRIDAY"> FRIDAY</a>
+    <ul class="fnav">
+      <li><a href="features.html">Features</a></li>
+      <li><a href="models.html">Models</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <span class="fcopy">© 2025 FRIDAY. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+const ham = document.getElementById('hamburger');
+const mob = document.getElementById('mobileMenu');
+ham.addEventListener('click', () => {
+  mob.classList.toggle('open');
+  const s = ham.querySelectorAll('span');
+  s[0].style.transform = mob.classList.contains('open') ? 'rotate(45deg) translate(5px,5px)':'';
+  s[1].style.opacity = mob.classList.contains('open') ? '0':'1';
+  s[2].style.transform = mob.classList.contains('open') ? 'rotate(-45deg) translate(5px,-5px)':'';
+});
+const io = new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
