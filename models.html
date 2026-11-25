@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Models · FRIDAY</title>
+  <meta name="description" content="Choose the on-device Llama 3.2 model that fits your iPhone.">
+  <meta property="og:title" content="Models · FRIDAY">
+  <meta property="og:description" content="Choose the on-device Llama 3.2 model that fits your iPhone.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050607">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+<header class="head">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html" aria-label="FRIDAY home"><span class="brand-eyes" aria-hidden="true"><i></i><i></i></span>FRIDAY</a>
+    <ul class="nav-links"><li><a href="features.html">Features</a></li><li><a href="models.html" aria-current="page">Models</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <a class="btn btn-solid" href="https://apps.apple.com/us/app/friday-ai/id6778718778" target="_blank" rel="noopener">Download</a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </nav>
+</header>
+<div class="menu"><a href="index.html">Home</a><a href="features.html">Features</a><a href="models.html">Models</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a><a class="btn" href="https://apps.apple.com/us/app/friday-ai/id6778718778" target="_blank" rel="noopener">Download on the App Store</a></div>
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <h1 class="d1 rv">Choose your model.<br>Keep your privacy.</h1>
+    <p class="lede rv">FRIDAY supports multiple Llama 3.2 sizes, all running locally on your iPhone. Pick the balance of speed and intelligence that fits your device.</p>
+    <div class="models-ui">
+      <div class="picker rv" role="tablist" aria-label="Models" data-picker>
+        <button role="tab" data-m="1B"><b>1B</b><span>Fastest</span><em>Available</em></button>
+        <button role="tab" data-m="3B"><b>3B</b><span>Recommended</span><em>Available</em></button>
+        <button role="tab" data-m="8B"><b>8B</b><span>Most capable</span><em>Coming soon</em></button>
+      </div>
+      <div class="spec rv" role="tabpanel" data-spec aria-live="polite">
+        <h3></h3><p></p>
+        <dl>
+          <div><dt>Download size</dt><dd data-k="size"></dd><div class="meter"><i></i></div></div>
+          <div><dt>Speed</dt><dd data-k="speed"></dd><div class="meter"><i></i></div></div>
+          <div><dt>Memory</dt><dd data-k="ram"></dd><div class="meter"><i></i></div></div>
+          <div><dt>Works on</dt><dd data-k="device"></dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="d2 rv">Side by side.</h2>
+    <div class="table-wrap rv">
+      <table>
+        <thead><tr><th>Capability</th><th>1B</th><th>3B</th><th>8B (soon)</th></tr></thead>
+        <tbody>
+          <tr><td>Runs on-device</td><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+          <tr><td>Works offline</td><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+          <tr><td>Zero data sent</td><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+          <tr><td>Code generation</td><td>Basic</td><td>Strong</td><td>Excellent</td></tr>
+          <tr><td>Long-form writing</td><td>Short only</td><td>Good</td><td>Excellent</td></tr>
+          <tr><td>Multi-step reasoning</td><td>Limited</td><td>Good</td><td>Very good</td></tr>
+          <tr><td>Minimum iPhone</td><td>iPhone 12</td><td>iPhone 14</td><td>iPhone 16 Pro</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="d2 rv">Which iPhone runs what.</h2>
+    <p class="lede rv" style="margin-top:24px">Performance depends on memory and Neural Engine generation. More memory means a bigger, smarter model.</p>
+    <div class="devices rv">
+      <div><b>iPhone 12 / 13</b><span>4 GB RAM · A14 / A15</span><em>1B recommended</em></div>
+      <div><b>iPhone 14 / 15</b><span>6 GB RAM · A15 / A16</span><em>3B recommended</em></div>
+      <div><b>iPhone 15 Pro / 16</b><span>8 GB RAM · A17 / A18</span><em>3B, 8B soon</em></div>
+      <div><b>iPhone 16 Pro / Max</b><span>8 GB RAM · A18 Pro</span><em>8B, best experience</em></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="rv"><h2 class="d2">When you need more, add the cloud.</h2></div>
+    <div class="rv">
+      <p class="lede">Connect your own OpenAI or Anthropic key for GPT-4o or Claude. Your key goes directly to the provider. FRIDAY is just the interface.</p>
+      <p class="lede">Cloud features are always optional. The on-device experience never needs a key or a connection.</p>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap"><h2 class="d2 rv">Get FRIDAY on your iPhone.</h2><div class="actions rv"><a class="btn btn-solid" href="https://apps.apple.com/us/app/friday-ai/id6778718778" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.1 8.79.73 1.06 1.6 2.25 2.74 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.33-3.5ZM14.18 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23Z"/></svg>Download on the App Store</a></div></div>
+</section>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html"><span class="brand-eyes" aria-hidden="true"><i></i><i></i></span>FRIDAY</a>
+        <p>A private AI assistant that runs entirely on your iPhone.</p>
+      </div>
+      <div><h2>Product</h2><ul><li><a href="features.html">Features</a></li><li><a href="models.html">Models</a></li><li><a href="https://apps.apple.com/us/app/friday-ai/id6778718778" target="_blank" rel="noopener">App Store</a></li></ul></div>
+      <div><h2>Support</h2><ul><li><a href="contact.html">Contact</a></li><li><a href="contact.html#faq">FAQ</a></li><li><a href="mailto:fileflowinc@gmail.com?subject=FRIDAY">fileflowinc@gmail.com</a></li></ul></div>
+      <div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="foot-base"><span>&copy; <span data-year>2026</span> FRIDAY. Made by <a href="https://fileflowco.com" target="_blank" rel="noopener">FileFlow</a> in San Mateo, California.</span><a href="https://www.instagram.com/fileflowsc/" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+</footer>
+<script src="app.js?v=3" defer></script>
+</body>
+</html>
