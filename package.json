@@ -1,0 +1,13 @@
+{
+  "name": "fileflow-site",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo \"No build step required\""
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.11"
+  }
+}
