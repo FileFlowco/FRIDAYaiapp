@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FRIDAY · Your AI. On your device.</title>
+  <meta name="description" content="FRIDAY is a private AI assistant that runs entirely on your iPhone. No cloud, no subscription, works offline.">
+  <meta property="og:title" content="FRIDAY · Your AI. On your device.">
+  <meta property="og:description" content="FRIDAY is a private AI assistant that runs entirely on your iPhone. No cloud, no subscription, works offline.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050607">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=17">
+</head>
+<body>
+<header class="head">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html" aria-label="FRIDAY home"><span class="brand-eyes" aria-hidden="true"><i></i><i></i></span>FRIDAY</a>
+    <ul class="nav-links"><li><a href="features.html">Features</a></li><li><a href="models.html">Models</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <a class="btn btn-solid" href="https://apps.apple.com/us/app/friday-ai/id6778718778" target="_blank" rel="noopener">Download</a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </nav>
+</header>
+<div class="menu"><a href="index.html">Home</a><a href="features.html">Features</a><a href="models.html">Models</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a><a class="btn" href="https://apps.apple.com/us/app/friday-ai/id6778718778" target="_blank" rel="noopener">Download on the App Store</a></div>
+<main>
+
+<section class="flight">
+  <div class="wrap flight-grid">
+    <div class="flight-copy">
+      <p class="fl-tag rv"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 15.5v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V8.5l-8 5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5L13 18v-5l8 2.5Z"/></svg>Flight FR 417 · In-flight Wi-Fi unavailable</p>
+      <h1 class="d1 rv">No <span class="nw">Wi-Fi</span> up here.<br><span class="fl-dim">FRIDAY doesn't need it.</span></h1>
+      <p class="lede rv">A private AI assistant that runs entirely on your iPhone. No cloud, no subscription, and nothing you say ever leaves your phone.</p>
+      <div class="actions rv"><a class="btn btn-solid" href="https://apps.apple.com/us/app/friday-ai/id6778718778" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.1 8.79.73 1.06 1.6 2.25 2.74 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.33-3.5ZM14.18 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23Z"/></svg>Download on the App Store</a><a class="btn" href="features.html">See what it can do</a></div>
+      <ul class="hero-meta rv"><li>100% on-device</li><li>Works offline</li><li>No account</li></ul>
+    </div>
+    <div class="flight-scene rv" data-scene>
+      <div class="window" aria-hidden="true">
+        <div class="glass">
+          <div class="sky"></div>
+          <div class="stars" data-stars></div>
+          <div class="moon"></div>
+          <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+          <div class="city"></div>
+          <div class="wing"><span class="nav-light"></span><span class="strobe"></span></div>
+          <div class="shade" data-shade><span class="shade-grip"></span></div>
+        </div>
+      </div>
+      <p class="shade-hint" aria-hidden="true">Drag the shade</p>
+      <div class="fchat" data-console>
+        <div class="fchat-top"><span class="mini-eyes" aria-hidden="true"><i></i><i></i></span><b>FRIDAY</b><span class="pill-off"><i></i>Offline · on-device</span></div>
+        <div class="fchat-log">
+          <div class="fc-me">Can you plan my first day in Lisbon?</div>
+          <div class="fc-ai">Morning in Alfama, pastéis de nata in Belém at noon, sunset at Miradouro da Graça. Want dinner ideas too?</div>
+        </div>
+        <div class="reply" data-reply aria-live="polite"></div>
+        <form class="prompt" data-prompt>
+          <span class="caret-sign" aria-hidden="true">&gt;</span>
+          <label class="sr" for="ask">Ask FRIDAY</label>
+          <input id="ask" type="text" placeholder="Ask FRIDAY, no Wi-Fi needed" autocomplete="off" maxlength="140">
+          <button type="submit" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+        </form>
+        <div class="suggest" data-suggest>
+          <button type="button">Translate "where's my gate?"</button>
+          <button type="button">Help me sleep on this flight</button>
+          <button type="button">Do you work offline?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="duel-head rv">
+      <h2 class="d2">Same question.<br>No signal.</h2>
+      <p class="lede">Turn on airplane mode and ask both. One needs a server. One doesn't.</p>
+    </div>
+    <div class="duel rv" data-duel>
+      <div class="duel-bar">
+        <button class="air-toggle" type="button" aria-pressed="true" data-air-toggle><span class="sw" aria-hidden="true"></span><span>Airplane mode</span></button>
+        <div class="duel-qs" data-duel-qs>
+          <button type="button">Summarize my meeting notes</button>
+          <button type="button">Write a quick thank-you text</button>
+          <button type="button">What should I pack for a hike?</button>
+        </div>
+      </div>
+      <div class="duel-grid">
+        <div class="win cloud" data-win="cloud">
+          <div class="win-top"><span class="win-dot"></span>Cloud AI app<small data-net-tag>Offline</small></div>
+          <div class="win-body" data-body><p class="win-empty">Pick a question above.</p></div>
+        </div>
+        <div class="win fri" data-win="friday">
+          <div class="win-top"><span class="mini-eyes" aria-hidden="true"><i></i><i></i></span>FRIDAY<small>On-device</small></div>
+          <div class="win-body" data-body><p class="win-empty">Pick a question above.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="inside" data-inside>
+  <div class="inside-sticky">
+    <div class="wrap inside-grid">
+      <div class="inside-copy">
+        <p class="kick">Inside your iPhone</p>
+        <ol class="inside-steps">
+          <li><span>01</span><h3>The model moves in.</h3><p>Llama 3.2 downloads once over Wi-Fi, straight to your iPhone. 1.8 GB, then it's yours.</p></li>
+          <li><span>02</span><h3>Your chip does the thinking.</h3><p>Apple's Neural Engine and GPU generate every word, 20 to 40 tokens a second.</p></li>
+          <li><span>03</span><h3>The internet can leave.</h3><p>Turn on airplane mode, lose signal, go underground. Nothing changes.</p></li>
+          <li><span>04</span><h3>Nothing goes out.</h3><p>Zero requests. Zero bytes. There's no server to send anything to.</p></li>
+        </ol>
+      </div>
+      <div class="device" aria-hidden="true">
+        <div class="dv-frame">
+          <div class="dv-island"></div>
+          <div class="dv-status"><span class="dv-time">9:41</span><span class="dv-net"><svg class="dv-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 9.5a13 13 0 0 1 18 0M6.5 13a8 8 0 0 1 11 0M10 16.5a3 3 0 0 1 4 0"/></svg><svg class="dv-plane" viewBox="0 0 24 24" fill="currentColor"><path d="M21 15.5v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V8.5l-8 5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5L13 18v-5l8 2.5Z"/></svg></span></div>
+          <div class="dv-scr dv-dl">
+            <div class="ap-title">Setting up FRIDAY</div>
+            <div class="ap-card">
+              <div class="ap-row"><b>Llama 3.2 3B</b><span>Recommended</span></div>
+              <div class="ap-bar"><i></i></div>
+              <div class="ap-row ap-sub"><span data-dv-gb>0.00 / 1.80 GB</span><span data-dv-pct>0%</span></div>
+            </div>
+            <p class="ap-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>Saved only on this iPhone</p>
+          </div>
+          <div class="dv-scr dv-chat">
+            <div class="ap-head"><span class="mini-eyes" aria-hidden="true"><i></i><i></i></span><b>FRIDAY</b><small>3B · on-device</small></div>
+            <div class="ap-msgs">
+              <div class="ap-me">Summarize my meeting notes</div>
+              <div class="ap-ai" data-dv-stream></div>
+            </div>
+            <div class="ap-chip"><span class="dot"></span>Neural Engine · <b data-dv-tps>0 tok/s</b></div>
+          </div>
+          <div class="dv-scr dv-air">
+            <div class="ap-head"><span class="mini-eyes" aria-hidden="true"><i></i><i></i></span><b>FRIDAY</b><small>3B · offline</small></div>
+            <div class="ap-banner"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 15.5v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V8.5l-8 5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5L13 18v-5l8 2.5Z"/></svg>Airplane mode is on</div>
+            <div class="ap-msgs">
+              <div class="ap-me">Still there?</div>
+              <div class="ap-ai">Always. I don't need a signal. What's next?</div>
+              <div class="ap-me">Plan my day</div>
+              <div class="ap-ai ap-typing"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="dv-scr dv-zero">
+            <div class="ap-title">Privacy</div>
+            <div class="ap-list">
+              <div><span>Network requests</span><b data-dv-zero>0</b></div>
+              <div><span>Data sent</span><b>0 bytes</b></div>
+              <div><span>Account</span><b>None</b></div>
+              <div><span>Analytics</span><b>Off</b></div>
+              <div><span>Chats stored</span><b class="ok">This iPhone</b></div>
+            </div>
+            <p class="ap-note">FRIDAY has no server to send anything to.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="marquee-sec">
+  <div class="wrap"><h2 class="d2 rv center">Ask it anything.</h2><p class="lede rv center" style="margin-top:20px">Tap one and FRIDAY answers up top.</p></div>
+  <div class="marquee" data-marquee>
+    <div class="mq-row"><div class="mq-track">
+      <button type="button">Text my landlord I'll be late</button><button type="button">Explain a 401(k) simply</button><button type="button">3 quick dinner ideas</button><button type="button">Write a cover letter opener</button><button type="button">What's a good stretch for my back?</button><button type="button">Fix: their going tomorow</button><button type="button">Plan a weekend in Napa</button>
+    </div></div>
+    <div class="mq-row rev"><div class="mq-track">
+      <button type="button">Summarize these notes</button><button type="button">Explain compound interest</button><button type="button">Help me reply to this email</button><button type="button">Debug my Python loop</button><button type="button">Tell me a joke</button><button type="button">Do you work offline?</button><button type="button">Is my data private?</button>
+    </div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap try">
+    <div class="rv">
+      <p class="kick">The real app</p>
+      <h2 class="d2">Try it like it's in your hand.</h2>
+      <p class="lede" style="margin-top:24px">This is FRIDAY's chat, running right here. Tap a prompt, type your own, then flip airplane mode and keep going.</p>
+    </div>
+    <div class="hero-phone rv">
+      <div class="phone" data-demo>
+  <div class="screen booting">
+    <div class="island"></div>
+    <div class="status"><span data-clock>9:41</span><span class="ic">
+      <svg class="plane" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 15.5v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V8.5l-8 5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5L13 18v-5l8 2.5Z"/></svg>
+      <svg class="bars" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="14" width="3" height="6" rx="1"/><rect x="8" y="11" width="3" height="9" rx="1"/><rect x="13" y="8" width="3" height="12" rx="1"/><rect x="18" y="5" width="3" height="15" rx="1"/></svg>
+      <svg class="wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 9.5a13 13 0 0 1 18 0M6.5 13a8 8 0 0 1 11 0M10 16.5a3 3 0 0 1 4 0"/></svg>
+      <svg viewBox="0 0 28 24" fill="none" aria-hidden="true"><rect x="1" y="6" width="22" height="12" rx="3.5" stroke="currentColor" stroke-width="1.5" opacity=".5"/><rect x="3" y="8" width="16" height="8" rx="2" fill="currentColor"/></svg>
+    </span></div>
+    <div class="boot" aria-hidden="true"><code data-boot></code></div>
+    <div class="chat-head"><span class="mini-eyes" aria-hidden="true"><i></i><i></i></span><b>FRIDAY</b><small data-model-pill>3B · on-device</small></div>
+    <div class="log" aria-live="polite">
+      <div class="hello"><div class="hello-eyes" aria-hidden="true"><i></i><i></i></div><p>Hi, I'm FRIDAY.<br><span>Everything you ask stays on this iPhone.</span></p></div>
+    </div>
+    <div class="chips" data-chips>
+      <button type="button">Text my landlord I'll be late</button>
+      <button type="button">Explain a 401(k) simply</button>
+      <button type="button">3 quick dinner ideas</button>
+      <button type="button">Fix: their going tomorow</button>
+    </div>
+    <form class="compose" data-compose><label class="sr" for="fq">Message FRIDAY</label><input id="fq" type="text" placeholder="Message FRIDAY" autocomplete="off" maxlength="160"><button type="submit" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button></form>
+  </div>
+</div>
+      <button class="toggle" type="button" aria-pressed="false" data-airplane><span class="sw" aria-hidden="true"></span><span>Airplane mode <em class="dim" data-air-note>Try it. FRIDAY keeps answering.</em></span></button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="d2 rv">Where FRIDAY shows up.</h2>
+    <div class="story rv">
+      <div>
+      <p class="story-tag">From the beta</p>
+      <blockquote><p>During the beta, we gave FRIDAY to people with little or no internet access, so they could use an AI assistant too. They told us it really helped, and many of them still use it every day.</p></blockquote>
+      </div>
+      <div class="face story-face" aria-hidden="true"><span class="eye"></span><span class="eye"></span></div>
+    </div>
+    <div class="moments rv">
+      <article><span class="m-ic" aria-hidden="true">&#9992;</span><h3>At 35,000 feet</h3><p>No Wi-Fi on the flight. Draft the deck notes, rewrite the email, plan the trip. FRIDAY answers like you're on the ground.</p></article>
+      <article><span class="m-ic" aria-hidden="true">&#9650;</span><h3>Where the signal ends</h3><p>Rural towns, job sites, trails, basements. Wherever bars drop to zero, your assistant is still there.</p></article>
+      <article><span class="m-ic" aria-hidden="true">&#9679;</span><h3>Things you'd never type into the cloud</h3><p>Health questions, money, a hard message to someone you love. It stays on your phone, because nothing leaves it.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <dl class="facts rv">
+      <div><dt>0 bytes</dt><dd>of your conversations sent to any server</dd></div>
+      <div><dt>3B</dt><dd>parameter model running on your iPhone</dd></div>
+      <div><dt>1.8 GB</dt><dd>one-time download, then it's yours</dd></div>
+      <div><dt>&infin;</dt><dd>messages. No limits, no monthly bill</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap dl-demo">
+    <div class="rv">
+      <h2 class="d2">Download once.<br>Offline forever.</h2>
+      <p class="lede" style="margin-top:24px">The model downloads straight to your iPhone one time over Wi-Fi. After that, FRIDAY never needs the internet again. Not on a plane, not on a hike, not in a basement with zero bars.</p>
+    </div>
+    <div class="term rv" data-term aria-label="Model download, then offline">
+      <div class="term-bar"><i></i><i></i><i></i><span>friday · setup</span></div>
+      <pre data-term-out></pre>
+      <div class="term-prog"><i data-term-bar></i></div>
+    </div>
+  </div>
+</section>
+
+<section class="section center">
+  <div class="wrap">
+    <h2 class="d2 rv">Your words take the shortest trip possible.</h2>
+    <p class="lede rv" style="margin-top:24px">Most AI apps send everything you type to a data center. FRIDAY doesn't have one to send it to.</p>
+    <div class="flow rv" aria-label="Your message goes from you to your iPhone and stops there. No cloud.">
+      <div class="node"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.6"/><path d="M10.5 18.5h3"/></svg></div><b>You</b><span>type a message</span></div>
+      <div class="wire on"></div>
+      <div class="node"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2.5v3M15 2.5v3M9 18.5v3M15 18.5v3M2.5 9h3M2.5 15h3M18.5 9h3M18.5 15h3"/></svg></div><b>Your iPhone</b><span>thinks and replies</span></div>
+      <div class="wire off"></div>
+      <div class="node cloud"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A5.5 5.5 0 0 0 7 10a4.25 4.25 0 0 0 0 8.5Z"/></svg></div><b>The cloud</b><span>never involved</span></div>
+    </div>
+    <ul class="checks rv">
+      <li><span><b>No account.</b> No email, no sign-up, no tracking ID.</span></li>
+      <li><span><b>No analytics.</b> No ads, no third-party SDKs that phone home.</span></li>
+      <li><span><b>Encrypted by iOS.</b> Conversations stay in your device's local storage.</span></li>
+      <li><span><b>Cloud only if you choose.</b> Connect your own OpenAI or Anthropic key, or never touch it.</span></li>
+    </ul>
+    <p class="rv" style="margin-top:32px"><a class="link" href="privacy.html">Read the privacy policy</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="d2 rv">Pick your brain.</h2>
+    <p class="lede rv" style="margin-top:24px">Choose the model that fits your iPhone. Every option runs fully on-device.</p>
+    <div class="models-ui">
+      <div class="picker rv" role="tablist" aria-label="Models" data-picker>
+        <button role="tab" data-m="1B"><b>1B</b><span>Fastest</span><em>Available</em></button>
+        <button role="tab" data-m="3B"><b>3B</b><span>Recommended</span><em>Available</em></button>
+        <button role="tab" data-m="8B"><b>8B</b><span>Most capable</span><em>Coming soon</em></button>
+      </div>
+      <div class="spec rv" role="tabpanel" data-spec aria-live="polite">
+        <h3></h3><p></p>
+        <dl>
+          <div><dt>Download size</dt><dd data-k="size"></dd><div class="meter"><i></i></div></div>
+          <div><dt>Speed</dt><dd data-k="speed"></dd><div class="meter"><i></i></div></div>
+          <div><dt>Memory</dt><dd data-k="ram"></dd><div class="meter"><i></i></div></div>
+          <div><dt>Works on</dt><dd data-k="device"></dd></div>
+        </dl>
+        <p style="margin-top:24px;min-height:0"><a class="link" href="models.html">Compare all models</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="d2 rv">What's next for FRIDAY.</h2>
+    <p class="lede rv" style="margin-top:24px">FRIDAY keeps getting smarter with every update, and it stays on your device the whole way.</p>
+    <div class="roadmap rv">
+      <div><small>Coming soon</small><h3>Voice-first mode</h3><p>Talk to FRIDAY hands-free. Speech is transcribed and understood on your iPhone, with zero network needed.</p></div>
+      <div><small>Planned</small><h3>Memory</h3><p>FRIDAY remembers your name, preferences and projects across chats, stored only on your device.</p></div>
+      <div><small>Planned</small><h3>Bigger models</h3><p>As Apple silicon grows, so does FRIDAY: 8B and beyond for deeper reasoning, still fully on-device.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <div class="face " aria-hidden="true"><span class="eye"></span><span class="eye"></span></div>
+    <h2 class="d2 rv">Start talking to FRIDAY.</h2>
+    <p class="lede rv" style="margin-top:20px">No subscription. No cloud required. Download once and it's yours.</p>
+    <div class="actions rv"><a class="btn btn-solid" href="https://apps.apple.com/us/app/friday-ai/id6778718778" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.1 8.79.73 1.06 1.6 2.25 2.74 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.33-3.5ZM14.18 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23Z"/></svg>Download on the App Store</a></div>
+  </div>
+</section>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html"><span class="brand-eyes" aria-hidden="true"><i></i><i></i></span>FRIDAY</a>
+        <p>A private AI assistant that runs entirely on your iPhone.</p>
+      </div>
+      <div><h2>Product</h2><ul><li><a href="features.html">Features</a></li><li><a href="models.html">Models</a></li><li><a href="https://apps.apple.com/us/app/friday-ai/id6778718778" target="_blank" rel="noopener">App Store</a></li></ul></div>
+      <div><h2>Support</h2><ul><li><a href="contact.html">Contact</a></li><li><a href="contact.html#faq">FAQ</a></li><li><a href="mailto:fileflowinc@gmail.com?subject=FRIDAY">fileflowinc@gmail.com</a></li></ul></div>
+      <div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="foot-base"><span>&copy; <span data-year>2026</span> FRIDAY. Made by <a href="https://fileflowco.com" target="_blank" rel="noopener">FileFlow</a> in San Mateo, California.</span><a href="https://www.instagram.com/fileflowsc/" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+</footer>
+<script src="app.js?v=11" defer></script>
+</body>
+</html>
